@@ -249,8 +249,8 @@ try:
         #             gameOver = True
         #             quit()
         for i in winList:
-            if set(tuple(x) for x in i).issubset(tuple(x) for x in userMove):                           # i in userMove yazmayi ya da buna benzer birsey dene.
-                for k in range(len(board)):             # set()'e donusturmek gerekebilir.
+            if set(tuple(x) for x in i).issubset(tuple(x) for x in userMove):
+                for k in range(len(board)):
                     print('\t' * 5, *board[k], '\n')
                 print("Congratulations! You won! :)")
                 gameOver = True
